@@ -1,0 +1,4 @@
+git+https://github.com/rwightman/pytorch-image-models.git
+hydra-core
+# Numpy not found error if not using this numpy
+numpy==1.26.4
