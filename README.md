@@ -29,7 +29,7 @@
 
 ## Basic Docker File Single Build 
 
-```
+```Dockerfile
 # requirements.txt file content
 ####################################
 torch==1.12.1
@@ -68,7 +68,7 @@ ENTRYPOINT ["python3", "inference.py"]
 ##  Single Build Docker with  platform specefic wheels - Reduced size by 1GB
 
 
-```
+```Dockerfile
 # requirements.txt file content
 ####################################
 git+https://github.com/rwightman/pytorch-image-models.git
@@ -107,7 +107,7 @@ ENTRYPOINT ["python3", "inference.py"]
 ## muti-stage Build with Many Linux Image (Not much reduction 1.94GB)
 
 
-```
+```Dockerfile
 # requirements.txt file content
 ####################################
 torch==1.12.1
@@ -157,7 +157,7 @@ platform specefic torch libraries.
 ##  Multi Stage Build Docker with  platform specefic wheels - Reduced size < 1GB (894 MB)
 
 
-```
+```Dockerfile
 # requirements.txt file content
 ####################################
 git+https://github.com/rwightman/pytorch-image-models.git
