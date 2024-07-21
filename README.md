@@ -239,6 +239,13 @@ e.g
 docker run -it timm-pytorch-multi-stage-build-cpu-py39-linux-x86_64 model=resnet152 image=https://github.com/pytorch/hub/raw/master/images/dog.jpg
 
 ```
+
+# Docker Hub Image
+
+
+[Docker Hub Image - timm-pytorch-docker-multi-stage-build](https://hub.docker.com/repository/docker/crtagadiya/timm-pytorch-docker-multi-stage-build/general)
+
+
 # Reference
 
 - [Multi-stage-docker-python](https://pythonspeed.com/articles/multi-stage-docker-python/)
