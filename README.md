@@ -154,7 +154,9 @@ ENTRYPOINT ["python3", "inference.py"]
 - size reduction is not so much, but we will see how this further decreased using
 platform specefic torch libraries.
 
-##  Multi Stage Build Docker with  platform specefic wheels - Reduced size < 1GB (894 MB)
+
+
+##  Multi Stage Build Docker with  platform specefic wheels Alpine linux - Reduced size < 800MB (776 MB)
 
 
 ```Dockerfile
@@ -183,7 +185,7 @@ RUN apt-get update -y && apt install -y --no-install-recommends git\
     && pip install --user --no-cache-dir -r requirements.txt
 
 # Stage 2: run application code
-FROM python:3.9.19-slim
+FROM alpine:3.19
 
 COPY --from=stg1 /root/.local /root/.local
 ENV PATH=/root/.local/bin:$PATH
@@ -195,10 +197,11 @@ COPY . .
 ENTRYPOINT ["python3", "inference.py"]
 
 ```
-**Image size : 894 MB**
+**Image size : 776 MB**
 
-- multi stage build with installing platform specific libraries reduced image size < 900 MB.
-- We reduced Image size from 2.06 GB to 894 MB, which is huge reduction.
+- alpine image reduced size further.
+- We reduced Image size from 2.06 GB to 776 MB, which is huge reduction.
+
 
 
 ## Experiment
