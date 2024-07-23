@@ -204,11 +204,12 @@ ENTRYPOINT ["python3", "inference.py"]
 ## Experiment
 
 ```
-REPOSITORY                                             TAG       IMAGE ID       CREATED          SIZE
-timm-pytorch-multi-stage-build-cpu-py39-linux-x86_64   latest    5a36bed12b2b   4 seconds ago    894MB
-timm-pytorch-multi-stage-build-many-linux              latest    137cb67745e8   9 minutes ago    1.94GB
-timm-pytorch-singe-stage-recued-cpu-py3.9-wheels       latest    c0108460ca06   17 minutes ago   1.01GB
-timm-pytorch-singe-stage-many-linux                    latest    83b57dcf004b   27 minutes ago   2.06GB
+REPOSITORY                                                     TAG       IMAGE ID       CREATED          SIZE
+timm-pytorch-multi-stage-build-cpu-py39-linux-x86_64          latest    5a36bed12b2b   4 seconds ago    894MB
+timm-pytorch-multi-stage-build-many-linux                     latest    137cb67745e8   9 minutes ago    1.94GB
+timm-pytorch-singe-stage-recued-cpu-py3.9-wheels              latest    c0108460ca06   17 minutes ago   1.01GB
+timm-pytorch-singe-stage-many-linux                           latest    83b57dcf004b   27 minutes ago   2.06GB
+timm-pytorch-multi-stage-build-cpu-py39-linux-x86_64_alpine   latest    4c0433a64bdf   11 seconds ago   776MB
 ```
 
 # How to build & run docker Image
